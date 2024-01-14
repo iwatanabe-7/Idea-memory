@@ -20,6 +20,22 @@
         <%= flash[:alert] %>
       </div>
     <% end %>
+    <nav>
+      <% if user_signed_in? %>
+        <li>
+          <%= button_to "ログアウト", destroy_user_session_path, method: :delete %>
+        </li>
+      <% else %>
+      <ul>
+        <li>
+          <%= link_to "サインアップ", new_user_registration_path %>
+        </li>
+        <li>
+          <%= link_to "ログイン", new_user_session_path %>
+        </li>
+      </ul>
+      <% end %>
+    </nav>
     <%= yield %>
   </body>
 </html>
