@@ -10,6 +10,34 @@
   </head>
 
   <body>
+    <nav>
+    <i class="fa-solid fa-user"></i>
+    <ul>
+      <% if user_signed_in? %>
+        <li>
+          <%= link_to new_user_session_path do %>
+            <i class="fa-solid fa-user"></i>  Home
+          <% end %>
+        </li>
+        <li>
+          <%= button_to destroy_user_session_path, method: :delete do %>
+            <i class="fa-solid fa-right-from-bracket"></i>  ログアウト
+          <% end %>
+        </li>
+      <% else %>
+        <li>
+          <%= link_to new_user_registration_path do %>
+            <i class="fa-solid fa-user-plus"></i>  新規登録
+          <% end %>
+        </li>
+        <li>
+          <%= link_to new_user_session_path do %>
+            <i class="fa-solid fa-right-to-bracket"></i>  ログイン
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </nav>
     <% if flash[:notice] %>
       <div class="alert alert-info">
         <%= flash[:notice] %>
@@ -20,22 +48,6 @@
         <%= flash[:alert] %>
       </div>
     <% end %>
-    <nav>
-      <% if user_signed_in? %>
-        <li>
-          <%= button_to "ログアウト", destroy_user_session_path, method: :delete %>
-        </li>
-      <% else %>
-      <ul>
-        <li>
-          <%= link_to "サインアップ", new_user_registration_path %>
-        </li>
-        <li>
-          <%= link_to "ログイン", new_user_session_path %>
-        </li>
-      </ul>
-      <% end %>
-    </nav>
     <%= yield %>
   </body>
 </html>
