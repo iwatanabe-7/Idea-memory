@@ -1,17 +1,14 @@
 <% content_for :scss do %>
   <%= stylesheet_link_tag 'home' %>
 <% end %>
-<h1>Imemo</h1>
+<h1 class="m-5">Imemo</h1>
 <% if !user_signed_in? %>
   <p>Idea Memory とは、思いついたアイデアをメモしたり、</p><i class="bi bi-memory"></i>
   <p>アイデア出しを行うためのマンダラートを作成できるwebサービスです。</p>
-  <p>新規登録・ログインをして早速始めてみましょう</p>
-  <%# for i in 1..9 do%>
-    <%# for i in 1..9 do%>
-<!--      <input type="text" name="cell" style="width:6rem;height:4rem;margin-bottom: 0.5rem;">-->
-    <%# end %>
-  <%# end %>
-  <div class="container-fluid center-block mb-4">
+  <p class="mb-5">新規登録・ログインをして早速始めてみましょう</p>
+
+  <h3 class="mb-3">マンダラート機能</h3>
+  <div class="container-fluid center-block" style="max-width: 1000px;">
     <div class="row">
       <% range = 1..9 %>
       <% range.each do |i| %>
