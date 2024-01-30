@@ -7,6 +7,7 @@
   margin: 0 auto;
   padding: 2rem 0;
   width:500px;
+  height: 510px;
   text-align:center;
   position: fixed;
   top: 50%;
@@ -14,6 +15,8 @@
   transform: translateY(-50%) translateX(-50%);
   color: white;
   background-color: cadetblue;
+  display: grid;
+  place-items: center;
 }
 .form{
   width: 170px;
