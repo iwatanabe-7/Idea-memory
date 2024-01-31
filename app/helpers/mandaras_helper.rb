@@ -1,0 +1,2 @@
+module MandarasHelper
+end

@@ -1,0 +1,11 @@
+<h1><%= @user.name %>の詳細ページ</h1>
+<%= @user.name %>
+<%= @user.email %>
+<% if @user.mandalas.any? %>
+  <h3><%= @user.mandalas.count %>個のマンダラートを作成しています</h3>
+  <ul >
+    <% @user.mandalas.each do |mandala| %>
+      <li><%= mandala.name %></li>
+    <% end %>
+  </ul>
+<% end %>

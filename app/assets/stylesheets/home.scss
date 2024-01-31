@@ -13,10 +13,11 @@
 }
 
 textarea {
-  resize: none;
   width: 100%;
   height: 60px;
   line-height: 1; /* テキストを垂直方向に中央に配置するための line-height */
   padding: 20px 0px;
+  // overflow:hidden;
+  resize: none;
 }
 
