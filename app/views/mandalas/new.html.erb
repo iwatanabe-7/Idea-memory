@@ -7,20 +7,21 @@
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
-  <div class="container">
+  <div class="container-fluid center-block" style="max-width: 1000px;">
     <div class="row">
-      
       <%= form.fields_for :cells do |cell_form| %>
         <% if cell_form.object&.column == 1 %>
-        <div class="col-4">
-          <div class="row">
+        <div class="col-sm-4 p-1">
+          <div class="container-fluid">
+            <div class="row">
         <% end %>
-        <div class="col-4">
+        <div class="col-4 p-0">
           <%= cell_form.text_area :body, id: "body#{cell_form.object&.row}#{cell_form.object&.column}", class: "cell" %>
           <%= cell_form.hidden_field :row, value: cell_form.object&.row %>
           <%= cell_form.hidden_field :column, value: cell_form.object&.column %>
         </div>
         <% if cell_form.object&.column == 9 %>
+            </div>
           </div>
         </div>
         <% end %>
