@@ -3,6 +3,11 @@
   <% if @mandala %>
     <li><%= @mandala.name %></li>
     <li><%= @mandala.created_at %></li>
+    <% @cells.each do |cell| %>
+      <p>Row: <%= cell.row %>, Column: <%= cell.column %>, Body <%= cell.body %></p>
+      
+      </div>
+    <% end %>
   <% end %>
 </ul>
 <%= link_to '一覧を見る', mandalas_path %>

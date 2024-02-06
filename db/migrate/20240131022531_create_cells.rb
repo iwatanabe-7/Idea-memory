@@ -5,7 +5,6 @@ class CreateCells < ActiveRecord::Migration[6.1]
       t.integer :row
       t.integer :column
       t.references :mandala, null: false, foreign_key: true
-
       t.timestamps
     end
   end

@@ -5,14 +5,18 @@ class MandalasController < ApplicationController
   end
   def show
     @mandala = Mandala.find(params[:id])
+    @cells = @mandala.cells
   end
   def new
     @mandala = Mandala.new
+    9.times do |i|
+      9.times do |j|
+        @mandala.cells.build(row: i + 1, column: j + 1)
+      end
+    end
   end
   def create
-    @mandala = Mandala.new(mandala_params)
-    @mandala.user = current_user
-    p @mandala
+    @mandala = current_user.mandalas.build(mandala_params)
     if @mandala.save
       redirect_to @mandala, :notice => "Successfully created mandala."
     else
@@ -40,6 +44,6 @@ class MandalasController < ApplicationController
   private
 
   def mandala_params
-    params.require(:mandala).permit(:name)
+    params.require(:mandala).permit(:name, cells_attributes: [:body, :row, :column])
   end
 end

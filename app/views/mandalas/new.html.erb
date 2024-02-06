@@ -8,28 +8,35 @@
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
+  <div class="container">
+    <div class="row">
+      
+      <%= form.fields_for :cells do |cell_form| %>
+        <% if cell_form.object&.column == 1 %>
+        <div class="col-4">
+          <div class="row">
+        <% end %>
+        <div class="col-4">
+          <div class="cell">
+            <%= cell_form.text_area :body, id: "body#{cell_form.object&.row}#{cell_form.object&.column}" %>
+            <%= cell_form.hidden_field :row, value: cell_form.object&.row %>
+            <%= cell_form.hidden_field :column, value: cell_form.object&.column %>
+          </div>
+        </div>
+        <% if cell_form.object&.column == 9 %>
+          </div>
+        </div>
+        <% end %>
+      <% end %>
+      </div>
+      </div>
+    </div>
+ 
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
-<div class="container-fluid center-block" style="max-width: 1000px;">
-  <div class="row">
-    <% range = 1..9 %>
-    <% range.each do |i| %>
-      <div class="col-sm-4 p-1">
-        <div class="container-fluid">
-          <div class="row">
-            <% range.each do |j| %>
-              <div class="col-4 p-0">
-                <textarea class="cell" id="body<%= i %><%= j %>" cols="5" rows="2" wrap="soft" style=""></textarea>
-              </div>
-            <% end %>
-          </div>
-        </div>
-      </div>
-    <% end %>
-  </div>
-</div>
+
 
 <script>
   for (let i = 1; i < 10; i++) {
