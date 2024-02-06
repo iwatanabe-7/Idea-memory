@@ -1,7 +1,6 @@
 <% content_for :scss do %>
   <%= stylesheet_link_tag 'home' %>
 <% end %>
-
 <h1>マンダラート入力画面</h1>
 <%= form_with model: @mandala do |form| %>
   <div class="field">
@@ -17,11 +16,9 @@
           <div class="row">
         <% end %>
         <div class="col-4">
-          <div class="cell">
-            <%= cell_form.text_area :body, id: "body#{cell_form.object&.row}#{cell_form.object&.column}" %>
-            <%= cell_form.hidden_field :row, value: cell_form.object&.row %>
-            <%= cell_form.hidden_field :column, value: cell_form.object&.column %>
-          </div>
+          <%= cell_form.text_area :body, id: "body#{cell_form.object&.row}#{cell_form.object&.column}", class: "cell" %>
+          <%= cell_form.hidden_field :row, value: cell_form.object&.row %>
+          <%= cell_form.hidden_field :column, value: cell_form.object&.column %>
         </div>
         <% if cell_form.object&.column == 9 %>
           </div>
