@@ -1,15 +1,10 @@
 <h1>マンダラートの詳細</h1>
-<ul>
-  <% if @mandala %>
-    <li><%= @mandala.name %></li>
-    <li><%= @mandala.created_at %></li>
-    <% @cells.each do |cell| %>
-      <p>Row: <%= cell.row %>, Column: <%= cell.column %>, Body <%= cell.body %></p>
-      
-      </div>
-    <% end %>
-  <% end %>
-</ul>
+<div class="field">
+  <%= @mandala.name %>
+</div>
+
+
+
 <%= link_to '一覧を見る', mandalas_path %>
 <%= link_to '新規作成', new_mandala_path %>
 <%= link_to '編集する', edit_mandala_path(@mandala) %>

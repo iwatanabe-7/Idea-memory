@@ -1,10 +1,55 @@
+<% content_for :scss do %>
+  <%= stylesheet_link_tag 'home' %>
+<% end %>
 <h1>マンダラート編集画面</h1>
 <%= form_with model: @mandala do |form| %>
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
+  <div class="container-fluid center-block" style="max-width: 1000px;">
+    <div class="row">
+      <%= form.fields_for :cells do |cell_form| %>
+        <% if cell_form.object&.column == 1 %>
+        <div class="col-sm-4 p-1">
+          <div class="container-fluid">
+            <div class="row">
+        <% end %>
+        <div class="col-4 p-0">
+          <%= cell_form.text_area :body, id: "body#{cell_form.object&.row}#{cell_form.object&.column}", class: "cell" %>
+          <%= cell_form.hidden_field :row, value: cell_form.object&.row %>
+          <%= cell_form.hidden_field :column, value: cell_form.object&.column %>
+        </div>
+        <% if cell_form.object&.column == 9 %>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      <% end %>
+      </div>
+    </div>
+  </div>
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
+
+<script>
+  for (let i = 1; i < 10; i++) {
+    document.addEventListener("DOMContentLoaded", function () {
+      var inTextarea1 = document.getElementById(`body5${i}`);
+      var outTextarea1 = document.getElementById(`body${i}5`);
+      
+      var inTextarea2 = document.getElementById(`body${i}5`);
+      var outTextarea2 = document.getElementById(`body5${i}`);
+      
+      inTextarea1.addEventListener("input", function () {
+          outTextarea1.value = inTextarea1.value;
+      });
+
+      inTextarea2.addEventListener("input", function () {
+          outTextarea2.value = inTextarea2.value;
+      });
+    });
+  }
+</script>

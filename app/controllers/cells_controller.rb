@@ -1,10 +1,10 @@
 class CellsController < ApplicationController
-  def index
-    @cells = Cell.all
-  end
+  # def index
+  #   @cells = Cell.all
+  # end
 
-  def show
-    @cell = Cell.find(params[:id])
-  end
+  # def show
+  #   @cell = Cell.find(params[:id])
+  # end
 
 end

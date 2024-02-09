@@ -1,11 +1,9 @@
 class MandalasController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create]
   def index
     @mandalas = Mandala.all
   end
   def show
     @mandala = Mandala.find(params[:id])
-    @cells = @mandala.cells
   end
   def new
     @mandala = Mandala.new
@@ -28,7 +26,7 @@ class MandalasController < ApplicationController
     @mandala = Mandala.find(params[:id])
   end
   def update
-    @mandala = Mandala.find(params[:id])
+    @mandala = current_user.mandalas.find_by(params[:mandala_id])
     if @mandala.update(mandala_params)
       redirect_to @mandala, :notice  => "Successfully updated mandala."
     else
@@ -44,6 +42,7 @@ class MandalasController < ApplicationController
   private
 
   def mandala_params
-    params.require(:mandala).permit(:name, cells_attributes: [:body, :row, :column])
+    params.require(:mandala).permit(:name, cells_attributes: [:id, :body, :row, :column])
   end
+
 end
