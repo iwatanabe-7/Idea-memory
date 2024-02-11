@@ -1,9 +1,9 @@
 class MandalasController < ApplicationController
   def index
-    @mandalas = Mandala.all
+    @mandalas = current_user.mandalas.all
   end
   def show
-    @mandala = Mandala.find(params[:id])
+    @mandala = current_user.mandalas.find(params[:id])
   end
   def new
     @mandala = Mandala.new
