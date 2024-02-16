@@ -1,24 +1,9 @@
-# README
+<img src="https://github.com/iwatanabee/Idea-memory/assets/83575309/492b3cb2-7943-4305-9c91-2b4c836bc469" width="100" height="100">
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 概要
 
-Things you may want to cover:
+## このアプリについて
+マンダラートを作成できるWebサービスです。
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
