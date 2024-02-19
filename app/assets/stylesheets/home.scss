@@ -4,7 +4,7 @@
 
 
 .cell {
-  background-color: white;
+  background-color:white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,5 +18,10 @@ textarea {
   line-height: 1;
   padding: 20px 0px;
   resize: none;
+}
+
+.field {
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 

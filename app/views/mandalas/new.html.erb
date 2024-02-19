@@ -1,11 +1,9 @@
 <% content_for :scss do %>
   <%= stylesheet_link_tag 'home' %>
 <% end %>
-<h1>マンダラート入力画面</h1>
 <%= form_with model: @mandala do |form| %>
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, placeholder: "title" %>
   </div>
   <div class="container-fluid center-block" style="max-width: 1000px;">
     <div class="row">

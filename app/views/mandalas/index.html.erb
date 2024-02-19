@@ -1,11 +1,12 @@
-<h1><%= current_user.name %>のマンダラートの一覧</h1>
-<ul>
+<h1 class="mb-5">マンダラートの一覧</h1>
   <% if @mandalas %>
     <% @mandalas.each do |mandala| %>
-      <li><%= mandala.name %></li>
-      <%= link_to '詳細を見る', mandala_path(mandala) %>
+      <div class="m-5">
+        <%= mandala.name %><br>
+        <%= link_to '詳細を見る', mandala_path(mandala) %>
+      </div>
     <% end %>
   <% end %>
-</ul>
-
-<%= link_to '新規作成', new_mandala_path %>
+<div class="m-5">
+  <%= link_to '新規作成', new_mandala_path %>
+</div>
