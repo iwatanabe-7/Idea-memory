@@ -3,10 +3,20 @@
 <% end %>
 <h1 class="m-5">Idea Memory</h1>
 <% if !user_signed_in? %>
-  <h2 class="mb-5">概要</h2>
-  <p>Idea Memoryとは、</p>
-  <p>アイデア出しをするためのマンダラートを作成できるWebサービスです</p>
-  <p class="mb-5">新規登録・ログインをして早速始めてみましょう</p>
+  <%# <div class="m-5 container"> %>
+    <%# <div class="row" style="background-color:white;"> %>
+      <%# <div class="col-6 p-5" style="text-align: left;"> %>
+        <h2 class="mb-5">概要</h2>
+        <p>Idea Memoryとは、</p>
+        <p>アイデア出しをするためのマンダラートを作成できるWebサービスです</p>
+        <p class="mb-5">新規登録・ログインをして早速始めてみましょう</p>
+      <%# </div> %>
+      <%# <div class="col-6 d-flex justify-content-center align-items-center">
+        <%= image_tag 'Imemo_catch_Icon.png', alt: 'catch Icon', style: 'max-width: 80%; height: auto;' %>
+      <%# <div> %>
+    <%# </div> %>
+    <%# </div> %>
+  <%# </div> %>
   <div class="mt-5" style="background-color:white;">
     <h3 class="mt-5 pt-5">主な機能</h3>
     <h4 class="mt-5">マンダラート作成機能</h4>

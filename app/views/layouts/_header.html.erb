@@ -1,7 +1,7 @@
 <header class="navbar fixed-top navbar-inverse" style="position: sticky;">
   <div class="container">
     <%= image_tag 'Imemo_Icon.png', size:8*8, alt: 'Icon' %>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right no-p">
         <% if user_signed_in? %>
           <li>
             <%= link_to new_user_session_path do %>

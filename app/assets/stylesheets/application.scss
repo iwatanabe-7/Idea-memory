@@ -8,3 +8,30 @@ body {
   padding:0 1rem;
   background-color: #f0f8ff;
 }
+@media print{
+  .no-p {
+    display: none;
+  }
+  .cell {
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 85%;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 60px;
+    line-height: 1;
+    padding: 20px 0px;
+    resize: none;
+  }
+  .navbar{
+    margin-top:2rem;
+  }
+  .title {
+    margin-bottom: 1rem;
+  }
+}
