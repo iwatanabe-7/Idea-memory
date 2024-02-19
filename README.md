@@ -1,7 +1,5 @@
 <img width="740" alt="スクリーンショット 2024-02-19 20 05 13" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/e12862cc-cc28-4694-a7e6-33d628db8a1c">
 
-# 概要
-
 ## このアプリについて
 <img src="https://github.com/iwatanabee/Idea-memory/assets/83575309/492b3cb2-7943-4305-9c91-2b4c836bc469" width="100" height="100">  
 
