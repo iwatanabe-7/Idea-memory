@@ -5,25 +5,25 @@
   <%= @mandala.name %>
 </div>
 <div class="container-fluid center-block" style="max-width: 1000px;">
-    <div class="row">
-      <% @mandala.cells.each do |cell| %>
-        <% if cell.column == 1 %>
-        <div class="col-sm-4 p-1">
-          <div class="container-fluid">
-            <div class="row">
-        <% end %>
-        <div class="col-4 p-0">
-          <textarea class="cell" id="body<%= cell.row %><%= cell.column %>" cols="5" rows="2" wrap="soft" style="" readonly><%= cell.body%></textarea>
-        </div>
-        <% if cell.column == 9 %>
-            </div>
+  <div class="row">
+    <% @mandala.cells.each do |cell| %>
+      <% if cell.column == 1 %>
+      <div class="col-sm-4 p-1">
+        <div class="container-fluid">
+          <div class="row">
+      <% end %>
+      <div class="col-4 p-0">
+        <textarea class="cell" id="body<%= cell.row %><%= cell.column %>" cols="5" rows="2" wrap="soft" style="" readonly><%= cell.body%></textarea>
+      </div>
+      <% if cell.column == 9 %>
           </div>
         </div>
-        <% end %>
-      <% end %>
       </div>
+      <% end %>
+    <% end %>
     </div>
   </div>
+</div>
 <div class="no-p">
   <%= link_to '一覧を見る', mandalas_path %>
   <%= link_to '新規作成', new_mandala_path %>

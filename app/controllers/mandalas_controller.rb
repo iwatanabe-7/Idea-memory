@@ -26,7 +26,7 @@ class MandalasController < ApplicationController
     @mandala = Mandala.find(params[:id])
   end
   def update
-    @mandala = current_user.mandalas.find_by(params[:mandala_id])
+    @mandala = current_user.mandalas.find(params[:id])
     if @mandala.update(mandala_params)
       redirect_to @mandala, :notice  => "Successfully updated mandala."
     else
