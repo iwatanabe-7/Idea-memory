@@ -32,6 +32,8 @@ Idea Memory (Imemo)とは、アイデア出しをサポートするWebサービ�
 - 就活の自己分析や目標決めに利用できる
 
 ## サービスの機能一覧
+### マンダラートを作成・保存できる
+<img width="50%" alt="Imemo pdf" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/8d291b34-c2d4-4400-bd09-55d5a88eef90">  
 
 ## 工夫した点
 ### pdf保存機能のデザイン設定  
