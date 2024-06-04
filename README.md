@@ -73,3 +73,10 @@ Idea Memory (Imemo)とは、アイデア出しをサポートするWebサービ�
 - そもそもマスが小さすぎて、スマホでの作業に向いていない  
   → スマホを横にして作業ができるようにデザインを工夫した。
 
+## ユーザーのマンダラートの例  
+研究室の同期が作成したマンダラート  
+<img width="50%" alt="Imemo pdf" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/a6327496-dff8-43cb-8f10-5cccc0ee85cd"> 
+
+
+
+
