@@ -34,7 +34,7 @@ Idea Memory (Imemo)とは、アイデア出しをサポートするWebサービ�
 
 ## サービスの機能一覧
 ### マンダラートを作成・保存できる
-<img width="100%" alt="Imemo pdf" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/8d291b34-c2d4-4400-bd09-55d5a88eef90">  
+<img width="100%" alt="Imemo pdf" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/e43743a3-0c6e-4251-b884-b1e00d1d25db">  
 
 ## 工夫した点
 ### pdf保存機能のデザイン設定  
