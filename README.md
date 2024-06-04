@@ -75,9 +75,9 @@ Idea Memory (Imemo)とは、アイデア出しをサポートするWebサービ�
 
 ## ユーザーのマンダラートの例  
 研究室の同期が作成したマンダラート  
-<img width="50%" alt="Imemo pdf" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/a6327496-dff8-43cb-8f10-5cccc0ee85cd"> 
+<img width="50%" alt="Imemo pdf" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/ab0b2034-2b5a-46c7-b5c4-3a76c795551a"> 
 
-[mandala (1).pdf](https://github.com/user-attachments/files/15543928/mandala.1.pdf)
+
 
 
 
