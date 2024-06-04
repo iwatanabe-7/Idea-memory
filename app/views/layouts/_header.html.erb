@@ -2,18 +2,7 @@
   <div class="container">
     <%= image_tag 'Imemo_Icon.png', size:8*8, alt: 'Icon' %>
       <ul class="nav navbar-nav navbar-right no-p">
-        <% if user_signed_in? %>
-          <li>
-            <%= link_to new_user_session_path do %>
-              <i class="fa-solid fa-user"></i>  Home
-            <% end %>
-          </li>
-          <li>
-            <%= button_to destroy_user_session_path, method: :delete do %>
-              <i class="fa-solid fa-right-from-bracket"></i>  ログアウト
-            <% end %>
-          </li>
-        <% else %>
+        <% if !user_signed_in? %>
           <li>
             <%= link_to new_user_registration_path do %>
               <i class="fa-solid fa-user-plus"></i>  新規登録
@@ -22,6 +11,17 @@
           <li>
             <%= link_to new_user_session_path do %>
               <i class="fa-solid fa-right-to-bracket"></i>  ログイン
+            <% end %>
+          </li>
+        <% else %>
+          <li>
+            <%= link_to new_user_session_path do %>
+              <i class="fa-solid fa-user"></i>  Home
+            <% end %>
+          </li>
+          <li>
+            <%= button_to destroy_user_session_path, method: :delete do %>
+              <i class="fa-solid fa-right-from-bracket"></i>  ログアウト
             <% end %>
           </li>
         <% end %>

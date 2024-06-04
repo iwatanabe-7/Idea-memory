@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-
 .cell {
   background-color:white;
   display: flex;
@@ -13,7 +12,7 @@
 }
 
 .title {
-  margin:1rem;
+  margin:100px 50px 1rem;
 }
 
 textarea {
@@ -22,4 +21,22 @@ textarea {
   line-height: 1;
   padding: 20px 0px;
   resize: none;
+}
+
+.des {
+  margin:5% 20%;
+  padding: 5%;
+  background: linear-gradient(to right, #FFFFFF,#6DD5FA);
+  transform: skew(3deg)
+  // 10 5 5
+}
+.normal {
+  transform:skew(-3deg);
+}
+.des-func {
+  margin:0;
+  padding: 2%;
+  background: linear-gradient(to right, #FFFFFF,#6DD5FA);
+  transform: skewY(3deg)
+  // 10 5 5
 }

@@ -5,8 +5,13 @@
 body {
   margin: 0 auto;
   text-align: center;
-  padding:0 1rem;
-  background-color: #f0f8ff;
+  background-color: #f2fcfe;
+}
+header {
+  background: linear-gradient(to right,#56CCF2, #2F80ED);
+}
+a {
+  text-decoration: none;
 }
 @media print{
   .no-p {

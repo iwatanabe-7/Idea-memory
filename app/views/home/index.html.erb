@@ -1,37 +1,60 @@
 <% content_for :scss do %>
   <%= stylesheet_link_tag 'home' %>
 <% end %>
-<h1 class="m-5 no-p">Idea Memory</h1>
 <% if !user_signed_in? %>
-  <h2 class="mb-5 no-p">概要</h2>
-  <%= image_tag 'Imemo_image.png', width: 700, alt: 'Imemo Image' %>
-  <p class="mt-5 no-p">Idea Memoryとは、</p>
-  <p class="no-p">アイデア出しをするためのマンダラートを作成できるWebサービスです</p>
-  <p class="mb-5 no-p">新規登録・ログインをして早速始めてみましょう</p>
-  <div class="mt-5" style="background-color:#f0f8ff;">
-    <h3 class="mt-5 pt-5 no-p">主な機能</h3>
-    <h4 class="m-5 no-p">マンダラート作成機能</h4>
-    <div class="title">
-      <input type="text" placeholder="タイトルを入力してください">
-    </div>
-    <div class="container-fluid center-block mb-4" style="max-width: 800px;">
-      <div class="row">
-        <% range = 1..9 %>
-        <% range.each do |i| %>
-          <div class="col-sm-4 p-1">
-            <div class="container-fluid">
-              <div class="row">
-                <% range.each do |j| %>
-                  <div class="col-4 p-0">
-                    <textarea class="cell" id="body<%= i %><%= j %>" cols="5" rows="2" wrap="soft" style=""></textarea>
-                  </div>
-                <% end %>
-              </div>
-            </div>
-          </div>
-        <% end %>
+  <div class="des rounded-5 no-p">
+    <h1 class="m-5 normal">「アイデア出しをもっと手軽に」</h1>
+    <p>Idea Memory(Imemo)とは、</p>
+    <p class="mb-5 normal">無料でマンダラートを作成できるサービスです。</p>
+    <p class="normal">マンダラートを使い、スムーズにアイデア出しや目標決めを行いましょう</p>
+  </div>
+  <div class="des rounded-5 no-p">
+    <ul class="mb-5 normal">
+        <li>マンダラートを印刷して書くのは、正直面倒</li>
+        <li>中央のマスに書いたことを、外側のマスに書かないといけない</li>
+        <li>すべてのマスを埋められない</li>
+        <li>ほかの人のマンダラートを参考にして、書きたい</li>
+    </ul>
+    <p class="mb-5 normal">そんな悩みを解決するサービスです。</p>
+    <p class="normal">アイデア出しや自己分析、目標決めをするときに、ご活用ください</p>
+  </div>
+  <div class="container-fluid" style="max-width: 1000px;">
+    <div class="row">
+      <div class="des-func rounded-5 col-4 no-p">
+        <h3 class="m-5">マンダラート作成機能</h3>
+        <p >無料でマンダラートを作成できるサービスです。</p>
+      </div>
+      <div class="des-func rounded-5 col-4 no-p">
+        <h3 class="m-5">pdf保存</h3>
+        <p class="">pdfで保存できます。</p>
+      </div>
+      <div class="des-func rounded-5 col-4 no-p">
+        <h3 class="m-5">自動入力機能</h3>
+        <p>マスを埋めてくれます</p>
       </div>
     </div>
+  </div>
+  <div class="title">
+    <input type="text" placeholder="タイトルを入力してください">
+  </div>
+  <div class="container-fluid center-block mb-4" style="max-width: 1000px;">
+    <div class="row">
+      <% range = 1..9 %>
+      <% range.each do |i| %>
+        <div class="col-sm-4 p-1">
+          <div class="container-fluid">
+            <div class="row">
+              <% range.each do |j| %>
+                <div class="col-4 p-0">
+                  <textarea class="cell" id="body<%= i %><%= j %>" cols="5" rows="2" wrap="soft" style=""></textarea>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
     <button id="pdf_print" class="btn btn-success print no-p">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
         <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
