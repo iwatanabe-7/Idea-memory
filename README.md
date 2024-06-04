@@ -34,14 +34,11 @@ Idea Memory (Imemo)とは、アイデア出しをサポートするWebサービ�
 
 ## サービスの機能一覧
 ### マンダラートを作成・保存できる
-<img width="50%" alt="Imemo pdf" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/8d291b34-c2d4-4400-bd09-55d5a88eef90">  
+<img width="100%" alt="Imemo pdf" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/8d291b34-c2d4-4400-bd09-55d5a88eef90">  
 
 ## 工夫した点
 ### pdf保存機能のデザイン設定  
-<img width="50%" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/7d763a56-04bb-494e-a97d-a18483586da4">
-<!-- <img width="10%" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/6a1e6161-5766-4edf-9adf-1ca3048655c3"> -->
-→
-<img width="40%" alt="スクリーンショット 2024-02-19 21 14 33" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/a68eca54-9df2-40a3-83a2-0374a909edaa">  
+<img width="100%" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/7d763a56-04bb-494e-a97d-a18483586da4">
 
 作成したマンダラートをpdfで保存できるようにしました。  
 また保存するときに、マンダラートとロゴのみをpdf保存できるように(右上の画像)Webサービス側とpdf保存する側でデザインを変えて実装しました。
@@ -75,7 +72,7 @@ Idea Memory (Imemo)とは、アイデア出しをサポートするWebサービ�
 
 ## ユーザーのマンダラートの例  
 研究室の同期が作成したマンダラート  
-<img width="50%" alt="Imemo pdf" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/ab0b2034-2b5a-46c7-b5c4-3a76c795551a"> 
+<img width="100%" alt="Imemo pdf" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/ab0b2034-2b5a-46c7-b5c4-3a76c795551a"> 
 
 
 
