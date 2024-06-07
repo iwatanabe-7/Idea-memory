@@ -13,8 +13,8 @@
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-  color: white;
-  background-color: cadetblue;
+  color: black;
+  background: linear-gradient(to bottom right,#c0ddff, #4ea0ff);
   display: grid;
   place-items: center;
 }

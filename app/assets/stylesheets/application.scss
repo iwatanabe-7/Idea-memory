@@ -5,13 +5,17 @@
 body {
   margin: 0 auto;
   text-align: center;
-  background-color: #f2fcfe;
 }
 header {
   background: linear-gradient(to right,#56CCF2, #2F80ED);
 }
+li {
+  margin:10px 0;
+}
 a {
   text-decoration: none;
+  background: white;
+  padding: 1px;
 }
 @media print{
   .no-p {
@@ -24,6 +28,10 @@ a {
     align-items: center;
     text-align: center;
     font-size: 85%;
+  }
+
+  .cell::-webkit-scrollbar{
+    display: none;
   }
   
   textarea {
