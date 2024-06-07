@@ -1,7 +1,7 @@
 <img width="740" alt="スクリーンショット 2024-02-19 20 05 13" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/e12862cc-cc28-4694-a7e6-33d628db8a1c">
 
 ## このサービスについて
-<img src="https://github.com/iwatanabee/Idea-memory/assets/83575309/492b3cb2-7943-4305-9c91-2b4c836bc469" width="100" height="100">  
+<img src="https://github.com/iwatanabee/Idea-memory/assets/83575309/01f850c6-4f37-48e4-8ee7-2ece9d28f5cf" height="500">  
 
 **「アイデア出しをもっとスムーズに」**  
 という思いがあり、このサービスを製作しました。  
@@ -69,6 +69,12 @@ Idea Memory (Imemo)とは、アイデア出しをサポートするWebサービ�
   → 最初から81個のマスを用意し、それを表示　＆　ログイン機能を作成
 - そもそもマスが小さすぎて、スマホでの作業に向いていない  
   → スマホを横にして作業ができるようにデザインを工夫した。
+
+## サービスのデザイン
+<img src="https://github.com/iwatanabee/Idea-memory/assets/83575309/4d98ebd6-b850-4190-abe1-972842611c52" height="500"><img src="https://github.com/iwatanabee/Idea-memory/assets/83575309/a5ae3056-6e50-4fec-85f7-668e0030d909" width="300" height="500"><img src="https://github.com/iwatanabee/Idea-memory/assets/83575309/25587aac-8ce4-4292-8578-b017657dd1c5" width="300" height="500"><img src="https://github.com/iwatanabee/Idea-memory/assets/83575309/cb826b92-63ef-4291-8349-29cc55083644" width="300" height="500">  
+![Untitled (10)](https://github.com/iwatanabee/Idea-memory/assets/83575309/01f850c6-4f37-48e4-8ee7-2ece9d28f5cf)
+
+
 
 ## ユーザーのマンダラートの例  
 研究室の同期が作成したマンダラート  
