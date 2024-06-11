@@ -1,7 +1,7 @@
 <img width="740" alt="スクリーンショット 2024-02-19 20 05 13" src="https://github.com/iwatanabee/Idea-memory/assets/83575309/e12862cc-cc28-4694-a7e6-33d628db8a1c">
 
 ## このサービスについて
-<img src="https://github.com/iwatanabee/Idea-memory/assets/83575309/01f850c6-4f37-48e4-8ee7-2ece9d28f5cf" height="500">  
+<img src="https://github.com/iwatanabee/Idea-memory/assets/83575309/01f850c6-4f37-48e4-8ee7-2ece9d28f5cf" width="100%">  
 
 **「アイデア出しをもっとスムーズに」**  
 という思いがあり、このサービスを製作しました。  
