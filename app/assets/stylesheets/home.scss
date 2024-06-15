@@ -11,7 +11,8 @@
 }
 .absolute {
   position :absolute;
-  top:-200px;
+  right:-20px;
+  top:-40%;
 }
 .cell {
   background-color:white;
@@ -38,12 +39,17 @@ textarea {
   resize: none;
 }
 
-.des {
+.des,.des-2{
   margin:10% 25%;
   padding: 5%;
   background: linear-gradient(to right,#c0ddff, #4ea0ff);
   transform: skew(3deg)
   // 10 5 5
+}
+
+.des-2 li {
+  text-align: left;
+  list-style-type: circle;
 }
 .normal {
   transform:skew(-3deg);
@@ -54,6 +60,22 @@ textarea {
   background: linear-gradient(to right, #FFFFFF,#4ea0ff);
   transform: skewY(3deg)
   // 10 5 5
+}
+@media (max-width:1500px) {
+  .absolute {
+    position :absolute;
+    width:40%;
+    height:50%;
+    right: 0px;
+    top:-30%;
+  }
+  .des,.des-2{
+    margin:20%;
+    padding: 10% 5%;
+    background: linear-gradient(to right,#c0ddff, #4ea0ff);
+    transform: skew(3deg)
+    // 10 5 5
+  }
 }
 
 @media (max-width:430px) {
@@ -66,7 +88,13 @@ textarea {
   }
   .des {
     margin:20% 5%;
-    padding: 20% 10%;
+    padding: 20% 5%;
+    background: linear-gradient(to right,#c0ddff, #4ea0ff);
+    transform: skew(2deg)
+  }
+  .des-2 {
+    margin:20% 5%;
+    padding: 10% 5%;
     background: linear-gradient(to right,#c0ddff, #4ea0ff);
     transform: skew(2deg)
   }
@@ -74,8 +102,7 @@ textarea {
     transform:skew(-2deg);
   }
   .des-func {
-    margin: 10% 0;
-    padding: 1%;
+    margin: 5% 0;
     background: linear-gradient(to right, #FFFFFF,#4ea0ff);
     transform: skewY(3deg)
     // 10 5 5
@@ -83,10 +110,14 @@ textarea {
   h1 {
     size:6px;
   }
-  h3 {
-    margin: 10%;
-  }
+
   p {
     size:3px;
+  }
+  .visible {
+    margin:30% 0;
+  }
+  .hidden {
+    display:none;
   }
 }
