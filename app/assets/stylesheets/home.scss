@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+h2 {
+  margin-top: 100px;
+}
+
 .li {
   margin:20px;
   text-align: left;
@@ -50,23 +54,47 @@ textarea {
 .des-2 li {
   text-align: left;
   list-style-type: circle;
-  margin: 0 50px;
+  margin:0 20%;
 }
+
 .normal {
   transform:skew(-3deg);
 }
+
 .des-func {
-  margin:0;
   padding: 2%;
-  background: linear-gradient(to right, #FFFFFF,#4ea0ff);
+  background: linear-gradient(to right,#c0ddff, #4ea0ff);
   transform: skewY(3deg)
-  // 10 5 5
 }
+
+.visible {
+  display: none;
+}
+
+.fadeUp{
+  animation-name:fadeUpAnime;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
+  opacity:-10;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width:1500px) {
   .absolute {
     position :absolute;
-    width:40%;
-    height:50%;
+    width:250px;
+    height:250px;
     right: 0px;
     top:-30%;
   }
@@ -76,6 +104,15 @@ textarea {
     background: linear-gradient(to right,#c0ddff, #4ea0ff);
     transform: skew(3deg)
     // 10 5 5
+  }
+}
+
+@media (max-width:930px) {
+  .absolute {
+    width:200px;
+    height:200px;
+    right: 0px;
+    top:-30%;
   }
 }
 
@@ -103,7 +140,7 @@ textarea {
     transform:skew(-2deg);
   }
   .des-func {
-    margin: 5% 0;
+    margin: 10% 5%;
     background: linear-gradient(to right, #FFFFFF,#4ea0ff);
     transform: skewY(3deg)
     // 10 5 5
@@ -117,8 +154,11 @@ textarea {
   }
   .visible {
     margin:30% 0;
+    display: block;
   }
+
   .hidden {
     display:none;
   }
+
 }
