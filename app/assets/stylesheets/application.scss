@@ -5,15 +5,6 @@
 body {
   margin: 0 auto;
   text-align: center;
-  animation: bgchange 10s ease infinite;
-}
-
-@keyframes bgchange{
-  0%   {background:#FFFFFF;}
-  25%  {background:#CCEFFB;}
-  50%  {background:#b4e8f9;}
-  75%  {background:#CCEFFB;}
-  100% {background:#FFFFFF;}
 }
 
 header {
@@ -29,6 +20,10 @@ a {
   padding: 1px;
 }
 @media print{
+  @page{
+    margin: 0;
+  }
+  
   .no-p {
     display: none;
   }
